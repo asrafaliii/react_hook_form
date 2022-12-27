@@ -1,0 +1,20 @@
+[
+    {
+        "id":1,
+        "name": "Andrew Clark",
+        "details" : "Andrew got started with web development by making sites with WordPress, and eventually tricked himself into doing JavaScript. His favorite pastime is karaoke. Andrew is either a Disney villain or a Disney princess, depending on the day.",
+        "img" : "https://reactjs.org/static/f868e3296f23e3c02b4ec429353b1609/4b190/acdlite.jpg"
+    },
+    {
+        "id":2,
+        "name": "Dan Abramov",
+        "details" : "Dan got into programming after he accidentally discovered Visual Basic inside Microsoft PowerPoint. He has found his true calling in turning Sebastian’s tweets into long-form blog posts. Dan occasionally wins at Fortnite by hiding in a bush until the game ends.",
+        "img" : "https://reactjs.org/static/96565d895aa8cc115f0b86dfc7a1305b/4b190/gaearon.jpg"
+    },
+    {
+        "id":3,
+        "name": "Jason Bonta",
+        "details" : "Jason likes having large volumes of Amazon packages delivered to the office so that he can build forts. Despite literally walling himself off from his team at times and not understanding how for-of loops work, we appreciate him for the unique qualities he brings to his work.",
+        "img" : "https://reactjs.org/static/3c14e1dec8677d49e01af8d345aebc94/bba1f/jasonbonta.jpg"
+    }
+]
