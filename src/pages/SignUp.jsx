@@ -1,6 +1,7 @@
 import React from "react";
 import {
   useCreateUserWithEmailAndPassword,
+  useSendEmailVerification,
   useSignInWithGoogle,
   useUpdateProfile,
 } from "react-firebase-hooks/auth";
@@ -16,9 +17,15 @@ const SignUp = () => {
     formState: { errors },
     handleSubmit,
   } = useForm(); // react form hook
+
   const [createUserWithEmailAndPassword, user, loading, error] =
     useCreateUserWithEmailAndPassword(auth);
+
   const [updateProfile, updating, updateError] = useUpdateProfile(auth);
+
+  const [sendEmailVerification, sendingEmail, sendError] = useSendEmailVerification(
+    auth
+  );
 
   const navigate = useNavigate();
 
@@ -32,7 +39,7 @@ const SignUp = () => {
     );
   }
 
-  if (error || gError || updateError) {
+  if (error || gError || updateError || sendError) {
     signInError = (
       <p className="text-red-500">
         <small>
@@ -51,7 +58,13 @@ const SignUp = () => {
     reset();
     await createUserWithEmailAndPassword(data.email, data.password);
     await updateProfile({ displayName: data.name });
+    const success = await sendEmailVerification();
+          if (success) {
+            alert('Sent Email Verification');
+          }
+
     console.log("update done");
+    console.log("email verification sent")
     navigate("/tutorial");
   };
 

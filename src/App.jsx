@@ -6,6 +6,7 @@ import Framework from "./pages/Framework";
 import Home from "./pages/Home";
 import Login from "./pages/Login";
 import SignUp from "./pages/SignUp";
+import Team from "./pages/Team";
 import Tutorial from "./pages/Tutorial";
 import Footer from "./shared/Footer";
 import Navbar from "./shared/Navbar";
@@ -27,6 +28,7 @@ function App() {
         />
         <Route path="/framework" element={<Framework />} />
         <Route path="/blog" element={<Blog />} />
+        <Route path="/team" element={<Team />} />
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<SignUp />} />
       </Routes>
