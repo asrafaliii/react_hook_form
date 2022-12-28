@@ -5,6 +5,8 @@ import Docs from "./pages/Docs";
 import Framework from "./pages/Framework";
 import Home from "./pages/Home";
 import Login from "./pages/Login";
+import MySqlLogin from "./pages/MySqlLogin";
+import MySqlSignup from "./pages/MySqlSignup";
 import SignUp from "./pages/SignUp";
 import Team from "./pages/Team";
 import Tutorial from "./pages/Tutorial";
@@ -29,6 +31,8 @@ function App() {
         <Route path="/framework" element={<Framework />} />
         <Route path="/blog" element={<Blog />} />
         <Route path="/team" element={<Team />} />
+        <Route path="/support" element={<MySqlLogin />} />
+        <Route path="/courses" element={<MySqlSignup />} />
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<SignUp />} />
       </Routes>

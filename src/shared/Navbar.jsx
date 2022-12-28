@@ -29,17 +29,17 @@ const Navbar = () => {
   const dropDown = (
     <>
       <li>
-        {
-          user && <>
-          <Link to="/team">Team</Link>
+        {user && (
+          <>
+            <Link to="/team">Team</Link>
           </>
-        }
+        )}
       </li>
       <li>
-        <a>Support</a>
+        <Link to="/support">Support</Link>
       </li>
       <li>
-        <a>Courses</a>
+        <Link to="/courses">Courses</Link>
       </li>
     </>
   );
